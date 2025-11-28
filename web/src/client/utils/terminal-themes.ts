@@ -1,4 +1,12 @@
-export type TerminalThemeId = 'auto' | 'light' | 'dark' | 'vscode-dark' | 'dracula' | 'nord';
+export type TerminalThemeId =
+  | 'auto'
+  | 'light'
+  | 'dark'
+  | 'vscode-dark'
+  | 'dracula'
+  | 'nord'
+  | 'monokai'
+  | 'gruvbox-dark';
 
 export interface TerminalTheme {
   id: TerminalThemeId;
@@ -150,6 +158,60 @@ export const TERMINAL_THEMES: TerminalTheme[] = [
       brightMagenta: '#B48EAD',
       brightCyan: '#8FBCBB',
       brightWhite: '#ECEFF4',
+    },
+  },
+  {
+    id: 'monokai',
+    name: 'Monokai',
+    description: 'Vibrant dark theme from Sublime Text',
+    colors: {
+      background: '#272822',
+      foreground: '#F8F8F2',
+      cursor: '#F8F8F2',
+      cursorAccent: '#272822',
+      black: '#272822',
+      red: '#F92672',
+      green: '#A6E22E',
+      yellow: '#F4BF75',
+      blue: '#66D9EF',
+      magenta: '#AE81FF',
+      cyan: '#A1EFE4',
+      white: '#F8F8F2',
+      brightBlack: '#75715E',
+      brightRed: '#F92672',
+      brightGreen: '#A6E22E',
+      brightYellow: '#F4BF75',
+      brightBlue: '#66D9EF',
+      brightMagenta: '#AE81FF',
+      brightCyan: '#A1EFE4',
+      brightWhite: '#F9F8F5',
+    },
+  },
+  {
+    id: 'gruvbox-dark',
+    name: 'Gruvbox Dark',
+    description: 'Retro groove color scheme',
+    colors: {
+      background: '#282828',
+      foreground: '#EBDBB2',
+      cursor: '#EBDBB2',
+      cursorAccent: '#282828',
+      black: '#282828',
+      red: '#CC241D',
+      green: '#98971A',
+      yellow: '#D79921',
+      blue: '#458588',
+      magenta: '#B16286',
+      cyan: '#689D6A',
+      white: '#A89984',
+      brightBlack: '#928374',
+      brightRed: '#FB4934',
+      brightGreen: '#B8BB26',
+      brightYellow: '#FABD2F',
+      brightBlue: '#83A598',
+      brightMagenta: '#D3869B',
+      brightCyan: '#8EC07C',
+      brightWhite: '#EBDBB2',
     },
   },
 ];

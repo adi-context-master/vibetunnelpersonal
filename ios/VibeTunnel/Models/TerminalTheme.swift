@@ -172,13 +172,69 @@ extension TerminalTheme {
         brightWhite: Color(hex: "ECEFF4")
     )
 
+    /// Monokai theme
+    static let monokai = TerminalTheme(
+        id: "monokai",
+        name: "Monokai",
+        description: "Vibrant dark theme from Sublime Text",
+        background: Color(hex: "272822"),
+        foreground: Color(hex: "F8F8F2"),
+        selection: Color(hex: "49483E"),
+        cursor: Color(hex: "F8F8F2"),
+        black: Color(hex: "272822"),
+        red: Color(hex: "F92672"),
+        green: Color(hex: "A6E22E"),
+        yellow: Color(hex: "F4BF75"),
+        blue: Color(hex: "66D9EF"),
+        magenta: Color(hex: "AE81FF"),
+        cyan: Color(hex: "A1EFE4"),
+        white: Color(hex: "F8F8F2"),
+        brightBlack: Color(hex: "75715E"),
+        brightRed: Color(hex: "F92672"),
+        brightGreen: Color(hex: "A6E22E"),
+        brightYellow: Color(hex: "F4BF75"),
+        brightBlue: Color(hex: "66D9EF"),
+        brightMagenta: Color(hex: "AE81FF"),
+        brightCyan: Color(hex: "A1EFE4"),
+        brightWhite: Color(hex: "F9F8F5")
+    )
+
+    /// Gruvbox Dark theme
+    static let gruvboxDark = TerminalTheme(
+        id: "gruvbox-dark",
+        name: "Gruvbox Dark",
+        description: "Retro groove color scheme",
+        background: Color(hex: "282828"),
+        foreground: Color(hex: "EBDBB2"),
+        selection: Color(hex: "504945"),
+        cursor: Color(hex: "EBDBB2"),
+        black: Color(hex: "282828"),
+        red: Color(hex: "CC241D"),
+        green: Color(hex: "98971A"),
+        yellow: Color(hex: "D79921"),
+        blue: Color(hex: "458588"),
+        magenta: Color(hex: "B16286"),
+        cyan: Color(hex: "689D6A"),
+        white: Color(hex: "A89984"),
+        brightBlack: Color(hex: "928374"),
+        brightRed: Color(hex: "FB4934"),
+        brightGreen: Color(hex: "B8BB26"),
+        brightYellow: Color(hex: "FABD2F"),
+        brightBlue: Color(hex: "83A598"),
+        brightMagenta: Color(hex: "D3869B"),
+        brightCyan: Color(hex: "8EC07C"),
+        brightWhite: Color(hex: "EBDBB2")
+    )
+
     /// All available themes
     static let allThemes: [TerminalTheme] = [
         .vibeTunnel,
         .vsCodeDark,
         .solarizedDark,
         .dracula,
-        .nord
+        .nord,
+        .monokai,
+        .gruvboxDark
     ]
 }
 

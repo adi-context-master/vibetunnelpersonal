@@ -50,7 +50,9 @@ struct TerminalThemeTests {
             "VS Code Dark",
             "Solarized Dark",
             "Dracula",
-            "Nord"
+            "Nord",
+            "Monokai",
+            "Gruvbox Dark"
         ]
 
         for expectedTheme in expectedThemes {
